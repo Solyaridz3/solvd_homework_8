@@ -1,6 +1,10 @@
+//@ts-check
+import { Book, Novel, ScienceFiction } from "./classes/Book.js";
+import User from "./classes/User.js";
+import Cart from "./classes/Cart.js";
+import Order from "./classes/Order.js";
 
 // Books creation
-
 const book1 = new Novel({
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
@@ -36,4 +40,18 @@ const book5 = new ScienceFiction({
     price: 11.99,
     availability: true,
 });
+
+const user = new User({
+    name: "Serhiy",
+    email: "solyaridz3@gmail.com",
+    userId: "solyaridz3",
+});
+
+// we can get userId but we can not change userId directly
+const cart = new Cart();
+
+cart.addBook(book1);
+cart.addBook(book2);
+cart.addBook(book3);
+cart.addBook(book4);
 

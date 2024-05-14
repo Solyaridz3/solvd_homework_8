@@ -6,6 +6,8 @@ const data = {
     users: [],
 };
 
+
+
 /** Examples of book creation  */
 
 const book1 = new Novel({
@@ -45,4 +47,5 @@ const book5 = new ScienceFiction({
 });
 
 data.books = [book1, book2, book3, book4, book5];
+
 writeToDb("DataBase.json", data).then(() => console.log("DONE!"));

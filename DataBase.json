@@ -1,1 +1,69 @@
-{"books":[{"title":"The Great Gatsby","author":"F. Scott Fitzgerald","price":12.99,"availability":true,"category":"Novel"},{"title":"To Kill a Mockingbird","author":"Harper Lee","price":9.99,"availability":true,"category":"Novel"},{"title":"1984","author":"George Orwell","price":8.99,"availability":true,"category":"Novel"},{"title":"Pride and Prejudice","author":"Jane Austen","price":7.99,"availability":true,"category":"Novel"},{"title":"Harry Potter and the Sorcerer's Stone","author":"J.K. Rowling","price":11.99,"availability":true,"category":"Science Fiction"}],"users":[{"name":"solyaridz3","email":"solyaridz3@gmail.com","userId":"solyaridz3"}]}
+{
+    "books": [
+        {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "price": 12.99,
+            "availability": true,
+            "category": "Novel"
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "price": 9.99,
+            "availability": true,
+            "category": "Novel"
+        },
+        {
+            "title": "1984",
+            "author": "George Orwell",
+            "price": 8.99,
+            "availability": true,
+            "category": "Novel"
+        },
+        {
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "price": 7.99,
+            "availability": true,
+            "category": "Novel"
+        },
+        {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "price": 11.99,
+            "availability": true,
+            "category": "Science Fiction"
+        }
+    ],
+    "users": [
+        {
+            "_userId": "serhiy",
+            "name": "serhiy",
+            "email": "serhiy",
+            "cart": { "items": [] },
+            "orders": [
+                {
+                    "orderId": "lw6paa9ood15fs8ae6n",
+                    "items": [
+                        {
+                            "title": "The Great Gatsby",
+                            "author": "F. Scott Fitzgerald",
+                            "price": 12.99,
+                            "availability": true,
+                            "category": "Novel"
+                        },
+                        {
+                            "title": "To Kill a Mockingbird",
+                            "author": "Harper Lee",
+                            "price": 9.99,
+                            "availability": true,
+                            "category": "Novel"
+                        }
+                    ],
+                    "total": 21
+                }
+            ]
+        }
+    ]
+}

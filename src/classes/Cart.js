@@ -1,16 +1,22 @@
 //@ts-check
 class Cart {
-    constructor(userId, items = []) {
-        this.userId = userId;
-        this.items = items;1
+    constructor(items) {
+        this.items = items;
     }
 
     addBook(book) {
         this.items.push(book);
     }
+    addBooks(books){
+        this.items.push(...books);
+    }
 
     removeItem(isbnToRemove) {
         this.items = this.items.filter(({ isbn }) => isbn !== isbnToRemove);
+    }
+
+    clear() {
+        this.items = [];
     }
 
     calculateTotal() {

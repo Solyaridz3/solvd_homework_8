@@ -3,16 +3,12 @@ import BookSchema from "../schemas/BookSchema.js";
 
 export class Book {
     static schema = BookSchema;
-    #isbn; // in order to prevent changes
     constructor({ title, author, isbn, price, availability }) {
         this.title = title;
         this.author = author !== undefined ? author : "unknown";
-        this.#isbn = isbn;
+        this.isbn = isbn;
         this.price = price;
         this.availability = availability;
-    }
-    getIsbn() {
-        return this.#isbn;
     }
 }
 

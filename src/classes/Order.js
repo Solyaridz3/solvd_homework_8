@@ -2,14 +2,13 @@
 import uid from "../utils/uid.js";
 
 class Order {
-    constructor(userId, items, total) {
-        this.userId = userId;
+    constructor(items, total) {
+        this.orderId = uid();
         this.items = items;
         this.total = total;
-        this.id = uid();
     }
 }
 
-const order = new Order("123123", [], 0);
+const order = new Order([], 0);
 
 export default Order;
