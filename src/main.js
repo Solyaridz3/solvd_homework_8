@@ -1,5 +1,5 @@
 //@ts-check
-import { login, actionsHandler } from "./userActions/actions.js";
+import App from "./userActions/actions.js";
 
 /***
  * Here I tried to implement bonus task with database
@@ -8,10 +8,4 @@ import { login, actionsHandler } from "./userActions/actions.js";
  * check their cart, and place an order if they wish.
  */
 
-async function main() {
-    const user = await login();
-    while (true) {
-        await actionsHandler(user);
-    }
-}
-main();
+App.main();

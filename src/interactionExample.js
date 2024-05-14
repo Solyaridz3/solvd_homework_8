@@ -48,10 +48,12 @@ const user = new User({
 });
 
 // we can get userId but we can not change userId directly
-const cart = new Cart();
 
-cart.addBook(book1);
-cart.addBook(book2);
-cart.addBook(book3);
-cart.addBook(book4);
+user.cart.addBooks([book1, book2, book3]);
+user.cart.addBook(book4);
 
+user.cart.removeItem("9780141439518");
+
+user.orders.push(new Order(user.cart.items, user.cart.calculateTotal()));
+
+console.log(user);

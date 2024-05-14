@@ -1,12 +1,17 @@
 import { Novel, ScienceFiction } from "./classes/Book.js";
 import writeToDb from "./utils/writeToDb.js";
+import User from "./classes/User.js";
 
 const data = {
     books: [],
-    users: [],
+    users: [
+        new User({
+            name: "John",
+            email: "JohnDoe@gmail.com",
+            userId: "johndoe",
+        }),
+    ],
 };
-
-
 
 /** Examples of book creation  */
 
