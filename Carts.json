@@ -1,0 +1,57 @@
+{
+    "userCarts": [
+        { "userId": "qweioqwrqw", "items": [] },
+        {
+            "userId": "hello2",
+            "items": [
+                {
+                    "title": "The Great Gatsby",
+                    "author": "F. Scott Fitzgerald",
+                    "isbn": "9780743273565",
+                    "price": 12.99,
+                    "availability": true
+                },
+                {
+                    "title": "To Kill a Mockingbird",
+                    "author": "Harper Lee",
+                    "isbn": "9780061120084",
+                    "price": 9.99,
+                    "availability": true
+                },
+                {
+                    "title": "1984",
+                    "author": "George Orwell",
+                    "isbn": "9780451524935",
+                    "price": 8.99,
+                    "availability": true
+                },
+                {
+                    "title": "Pride and Prejudice",
+                    "author": "Jane Austen",
+                    "isbn": "9780141439518",
+                    "price": 7.99,
+                    "availability": true
+                },
+                {
+                    "title": "Harry Potter and the Sorcerer's Stone",
+                    "author": "J.K. Rowling",
+                    "isbn": "9780590353427",
+                    "price": 11.99,
+                    "availability": true
+                }
+            ]
+        },
+        {
+            "userId": "solyaridz3",
+            "items": [
+                {
+                    "title": "Harry Potter and the Sorcerer's Stone",
+                    "author": "J.K. Rowling",
+                    "price": 11.99,
+                    "availability": true,
+                    "category": "Science Fiction"
+                }
+            ]
+        }
+    ]
+}
