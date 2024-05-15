@@ -1,7 +1,6 @@
 //@ts-check
 import { Book, Novel, ScienceFiction } from "./classes/Book.js";
-import User from "./classes/User.js";
-import Cart from "./classes/Cart.js";
+import { Customer } from "./classes/User.js";
 import Order from "./classes/Order.js";
 
 // Books creation
@@ -41,7 +40,7 @@ const book5 = new ScienceFiction({
     availability: true,
 });
 
-const user = new User({
+const user = new Customer({
     name: "Serhiy",
     email: "solyaridz3@gmail.com",
     userId: "solyaridz3",
@@ -51,9 +50,10 @@ const user = new User({
 
 user.cart.addBooks([book1, book2, book3]);
 user.cart.addBook(book4);
-
-user.cart.removeItem("9780141439518");
-
-user.orders.push(new Order(user.cart.items, user.cart.calculateTotal()));
+// we are able to removeBook from cart by ISBN
+user.cart.removeBook("9780141439518");
+// we are able to create orders
+user.createOrder();
 
 console.log(user);
+console.log(user.orders);

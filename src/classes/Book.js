@@ -21,6 +21,7 @@ export class Book {
     }
 }
 
+/** Book with science fiction category */
 export class ScienceFiction extends Book {
     constructor(data) {
         super(data);
@@ -28,6 +29,7 @@ export class ScienceFiction extends Book {
     }
 }
 
+/** Book with novel category */
 export class Novel extends Book {
     constructor(data) {
         super(data);

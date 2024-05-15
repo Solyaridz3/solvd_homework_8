@@ -15,6 +15,4 @@ class Order {
     }
 }
 
-const order = new Order([], 0);
-
 export default Order;

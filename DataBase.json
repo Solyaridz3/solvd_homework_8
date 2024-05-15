@@ -43,18 +43,64 @@
     ],
     "users": [
         {
-            "_userId": "johndoe",
-            "name": "John",
-            "email": "JohnDoe@gmail.com",
+            "_userId": "john",
+            "name": "john",
+            "email": "john",
             "cart": { "items": [] },
-            "orders": []
-        },
-        {
-            "_userId": "asdasdda",
-            "name": "asdasd",
-            "email": "asddas",
-            "cart": { "items": [] },
-            "orders": []
+            "orders": [
+                {
+                    "orderId": "lw7ix2z9lbdhyocdah",
+                    "items": [
+                        {
+                            "title": "The Great Gatsby",
+                            "author": "F. Scott Fitzgerald",
+                            "isbn": "9780743273565",
+                            "price": 12.99,
+                            "availability": true,
+                            "category": "Novel"
+                        },
+                        {
+                            "title": "To Kill a Mockingbird",
+                            "author": "Harper Lee",
+                            "isbn": "9780061120084",
+                            "price": 9.99,
+                            "availability": true,
+                            "category": "Novel"
+                        },
+                        {
+                            "title": "1984",
+                            "author": "George Orwell",
+                            "isbn": "9780451524935",
+                            "price": 8.99,
+                            "availability": true,
+                            "category": "Novel"
+                        }
+                    ],
+                    "total": 29
+                },
+                {
+                    "orderId": "lw7ixg99k1gbukza7pm",
+                    "items": [
+                        {
+                            "title": "The Great Gatsby",
+                            "author": "F. Scott Fitzgerald",
+                            "isbn": "9780743273565",
+                            "price": 12.99,
+                            "availability": true,
+                            "category": "Novel"
+                        },
+                        {
+                            "title": "To Kill a Mockingbird",
+                            "author": "Harper Lee",
+                            "isbn": "9780061120084",
+                            "price": 9.99,
+                            "availability": true,
+                            "category": "Novel"
+                        }
+                    ],
+                    "total": 21
+                }
+            ]
         }
     ]
 }

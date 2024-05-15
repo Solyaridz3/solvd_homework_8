@@ -25,7 +25,7 @@ class Cart {
     /**
      * Removes an item from the cart based on its ISBN.
      */
-    removeItem(isbnToRemove) {
+    removeBook(isbnToRemove) {
         this.items = this.items.filter(({ isbn }) => isbn !== isbnToRemove);
     }
 
