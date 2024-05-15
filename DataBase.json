@@ -1,1 +1,53 @@
-{"books":[{"title":"The Great Gatsby","author":"F. Scott Fitzgerald","isbn":"9780743273565","price":12.99,"availability":true,"category":"Novel"},{"title":"To Kill a Mockingbird","author":"Harper Lee","isbn":"9780061120084","price":9.99,"availability":true,"category":"Novel"},{"title":"1984","author":"George Orwell","isbn":"9780451524935","price":8.99,"availability":true,"category":"Novel"},{"title":"Pride and Prejudice","author":"Jane Austen","isbn":"9780141439518","price":7.99,"availability":true,"category":"Novel"},{"title":"Harry Potter and the Sorcerer's Stone","author":"J.K. Rowling","isbn":"9780590353427","price":11.99,"availability":true,"category":"Novel"}],"users":[{"_userId":"lw7lojbi1z4wrwl8i","name":"John","email":"JohnDoe@gmail.com","cart":{"items":[]},"orders":[]},{"_userId":"lw7lywdj2o6cf7fb1v3","name":"asd","email":"asd","cart":{"items":[]}}]}
+{
+    "books": [
+        {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "isbn": "9780743273565",
+            "price": 12.99,
+            "availability": true,
+            "category": "Novel"
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "isbn": "9780061120084",
+            "price": 9.99,
+            "availability": true,
+            "category": "Novel"
+        },
+        {
+            "title": "1984",
+            "author": "George Orwell",
+            "isbn": "9780451524935",
+            "price": 8.99,
+            "availability": true,
+            "category": "Novel"
+        },
+        {
+            "title": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "isbn": "9780141439518",
+            "price": 7.99,
+            "availability": true,
+            "category": "Novel"
+        },
+        {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "isbn": "9780590353427",
+            "price": 11.99,
+            "availability": true,
+            "category": "Novel"
+        }
+    ],
+    "users": [
+        {
+            "_userId": "lw7m27n5d3obsipw16v",
+            "name": "John",
+            "email": "JohnDoe@gmail.com",
+            "cart": { "items": [] },
+            "orders": []
+        }
+    ]
+}
