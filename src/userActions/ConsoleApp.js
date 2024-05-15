@@ -49,8 +49,8 @@ Your pick: `;
         const option = await inputText(ConsoleApp.LOGIN_OPTIONS);
         let user;
         if (option === "1") {
-            const userId = await inputText("Enter your userId: ");
-            const userData = data.users.find((user) => user._userId === userId);
+            const email = await inputText("Enter your email: ");
+            const userData = data.users.find((user) => user.email === email);
             if (userData) {
                 const { name, email, _userId, orders } = userData;
                 user = new Customer({ name, email, userId: _userId }, orders);

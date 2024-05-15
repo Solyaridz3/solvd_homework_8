@@ -1,17 +1,18 @@
 import { Novel, ScienceFiction } from "./classes/Book.js";
 import writeToDb from "./utils/writeToDb.js";
-import User from "./classes/User.js";
+import { Customer } from "./classes/User.js";
 import createObject from "./utils/createObject.js";
+
+const customer = createObject(Customer, {
+    name: "John",
+    email: "JohnDoe@gmail.com",
+});
+
+const dbUserData = { ...customer, orders: customer.orders }; // in order to include private field orders to db
 
 const data = {
     books: [],
-    users: [
-        new User({
-            name: "John",
-            email: "JohnDoe@gmail.com",
-            userId: "johndoe",
-        }),
-    ],
+    users: [dbUserData],
 };
 
 /** Examples of book creation  */
@@ -52,13 +53,14 @@ const book5 = createObject(Novel, {
     availability: true,
 });
 
+
 const books = [book1, book2, book3, book4, book5];
 const validBooks = [];
-for (book in books) {
+for (const book of books) {
     if (book !== null) {
-        validBooks.push.book;
+        validBooks.push(book);
     }
 }
-data.book = validBooks;
+data.books = validBooks;
 
 writeToDb("DataBase.json", data).then(() => console.log("DONE!"));

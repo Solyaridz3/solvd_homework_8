@@ -2,13 +2,14 @@
 import Order from "./Order.js";
 import UserSchema from "../schemas/UserSchema.js";
 import Cart from "./Cart.js";
+import uid from "../utils/uid.js";
 export class User {
     static schema = UserSchema;
     _userId; // we are still able to change that but we tell that we should not do that
-    constructor({ name, email, userId }) {
+    constructor({ name, email }) {
         this.name = name;
         this.email = email;
-        this._userId = userId;
+        this._userId = uid();
     }
     /**
      * Getter for retrieving the user ID.

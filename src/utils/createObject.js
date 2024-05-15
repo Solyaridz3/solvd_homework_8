@@ -8,9 +8,9 @@ import validateData from "./validateData.js";
  * @param {Object} data - The data to initialize the object with.
  * @return {Object | null} The created object or null if data is invalid.
  */
-function createObject(givenClass, data) {   
+function createObject(givenClass, data, ...args) {   
     if (validateData(data, givenClass.schema)) {
-        return new givenClass(data);
+        return new givenClass(data, ...args);
     }
     return null;
 }

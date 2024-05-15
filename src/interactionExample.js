@@ -39,11 +39,11 @@ const book5 = new ScienceFiction({
     price: 11.99,
     availability: true,
 });
+console.log(book5)
 
 const user = new Customer({
     name: "Serhiy",
     email: "solyaridz3@gmail.com",
-    userId: "solyaridz3",
 });
 
 // we can get userId but we can not change userId directly
