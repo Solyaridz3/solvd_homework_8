@@ -3,7 +3,7 @@ import { Book, Novel, ScienceFiction } from "./classes/Book.js";
 import { Customer } from "./classes/User.js";
 import Order from "./classes/Order.js";
 
-// Books creation
+// We are able to create books and validate them accordingly to Book schema,
 const book1 = new Novel({
     title: "The Great Gatsby",
     author: "F. Scott Fitzgerald",
@@ -48,12 +48,17 @@ const user = new Customer({
 
 // we can get userId but we can not change userId directly
 
-user.cart.addBooks([book1, book2, book3]);
-user.cart.addBook(book4);
+user.cart.addBooks([book1, book2, book3, book4]);
+
+user.cart.addBook(book5);
+
+for (const book of user.cart.items) {
+    book.displayCategory(); // display category based on book instances
+}
 // we are able to removeBook from cart by ISBN
 user.cart.removeBook("9780141439518");
 // we are able to create orders
-user.createOrder();
+user.createOrder(); // user are able to create order basing on current items that user has in cart
 
 console.log(user);
-console.log(user.orders);
+console.log(user.orders); // we can get orders or create them, but we are unable to delete or change them

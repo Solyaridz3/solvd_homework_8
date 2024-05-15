@@ -155,7 +155,7 @@ Your pick: `;
         const userDbIndex = data.users.findIndex(
             (dbUser) => dbUser._userId === this.user.userId
         );
-        const dataToSave = { ...this.user, orders: this.user.orders };
+        const dataToSave = { ...this.user, orders: this.user.orders};
         //@ts-ignore
         data.users[userDbIndex] = dataToSave;
         writeToDb("DataBase.json", data);

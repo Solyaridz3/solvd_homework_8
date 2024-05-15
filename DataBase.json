@@ -99,6 +99,28 @@
                         }
                     ],
                     "total": 21
+                },
+                {
+                    "orderId": "lw7jz8fng6i0w39g4nu",
+                    "items": [
+                        {
+                            "title": "The Great Gatsby",
+                            "author": "F. Scott Fitzgerald",
+                            "isbn": "9780743273565",
+                            "price": 12.99,
+                            "availability": true,
+                            "category": "Novel"
+                        },
+                        {
+                            "title": "To Kill a Mockingbird",
+                            "author": "Harper Lee",
+                            "isbn": "9780061120084",
+                            "price": 9.99,
+                            "availability": true,
+                            "category": "Novel"
+                        }
+                    ],
+                    "total": 21
                 }
             ]
         }

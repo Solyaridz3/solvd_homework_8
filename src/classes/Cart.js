@@ -13,13 +13,19 @@ class Cart {
      * Adds a book to the cart.
      */
     addBook(book) {
-        this.items.push(book);
+        if (book !== null) {
+            this.items.push(book);
+        }
     }
     /**
      * Adds multiple books to the cart.
      */
-    addBooks(books){
-        this.items.push(...books);
+    addBooks(books) {
+        for (const book of books) {
+            if (book !== null) {
+                this.items.push(book);
+            }
+        }
     }
 
     /**

@@ -19,6 +19,10 @@ export class Book {
         this.price = price;
         this.availability = availability;
     }
+    
+    displayCategory(){
+        console.log('This book does not have category');
+    }
 }
 
 /** Book with science fiction category */
@@ -27,6 +31,14 @@ export class ScienceFiction extends Book {
         super(data);
         this.category = "Science Fiction";
     }
+    /**
+     * A function to display the category of the book.
+     *
+     * @return {void} No return value
+     */
+    displayCategory(){
+        console.log('This is science fiction book with with imaginative and futuristic concepts.');
+    }
 }
 
 /** Book with novel category */
@@ -34,5 +46,14 @@ export class Novel extends Book {
     constructor(data) {
         super(data);
         this.category = "Novel";
+    }
+
+    /**
+     * A function to display the category of the book.
+     *
+     * @return {void} No return value
+     */
+    displayCategory(){
+        console.log('This is a novel, typically representing character and action with some degree of realism.')
     }
 }
